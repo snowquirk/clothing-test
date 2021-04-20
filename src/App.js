@@ -3,22 +3,13 @@ import { Route } from 'react-router-dom';
 
 import './App.css';
 import HomePage from './pages/Homepage/HomePage';
-
-const HatsPage = (props) => {
-  console.log(props);
-  return (
-    <div>
-      Hats Page
-      <h1>{props.match.params.id}</h1>
-    </div>
-  );
-};
+import ShopPage from './pages/ShopPage/ShopPage';
 
 function App() {
   return (
     <div>
       <Route exact path='/' component={HomePage} />
-      <Route exact path='/hats/:id' component={HatsPage} />
+      <Route exact path='/shop' component={ShopPage} />
     </div>
   );
 }
