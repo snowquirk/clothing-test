@@ -1,9 +1,11 @@
 import './SignInUpPage.scss';
 import SignIn from '../../components/SignIn/SignIn';
+import SignUp from '../../components/SignUp/SignUp';
 
 const SignInUpPage = () => (
-  <div>
-    <SignIn></SignIn>
+  <div className='layout'>
+    <SignIn />
+    <SignUp />
   </div>
 );
 
